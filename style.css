@@ -28,6 +28,7 @@ p {
 }
 a {
     padding: 5px;
+    text-decoration: none;
 }
 img {
     max-width: 100%;
