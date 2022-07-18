@@ -37,7 +37,7 @@ img {
 
 /*Animando artwork*/
 .displayed{
-    animation: flutuacao 5s ease-in-out infinite;
+    animation: flutuacao 2.5s ease-in-out infinite;
 }
 @keyframes flutuacao{
     0%, 100%{
