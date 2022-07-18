@@ -34,7 +34,7 @@ img {
     display: flex;
 }
 
-.animcao{
+.displayed{
     animation: flutuacao 5s ease-in-out infinite;
 }
 @keyframes flutuacao{
