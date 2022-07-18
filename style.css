@@ -1,41 +1,25 @@
 /*Configs basicas da página*/
-html {
-    font-size: 40px;
+*{
+    font-size: 20px;
     font-family: inherit;
-}
-body {
-    background-color: rgba(193, 199, 206, 0.788);
-}
-h1, h2 {
-    color: rgb(0, 0, 0);
-    width: 800px;
-    text-align: center;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto
-}
-span {
-    color: rgb(28, 141, 13);
-}
-p {
-    color: rgb(0, 0, 0);
-    width: 900px;
-    text-align: center;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto
-
-}
-a {
     padding: 5px;
-    text-decoration: none;
 }
+
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #162322;
+    min-height: 100vh;
+}
+
 img {
     max-width: 100%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/*Animando artwork*/
 .displayed{
     animation: flutuacao 2.5s ease-in-out infinite;
 }
@@ -48,46 +32,112 @@ img {
     }
 }
 
-
-/*Centralizando imagem*/
-.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+span{
+    color: rgb(28, 141, 13);
 }
 
-/*Criando flex-box*/
-.container-flex {
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+h1{
+    color: antiquewhite;
+    position: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gerais{
+    position: flex;
+    color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.container{
+    position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
     flex-wrap: wrap;
-    align-content: space-around;
-    gap: 10px;
-}
-
-/*Editando flex-box*/
-.container-flex > div{
-    border: 1px solid black;
-    border-radius: 25px;
-    font-size: 30px;
-    text-align: center;
     padding: 75px;
-    background-color: rgba(149, 161, 201, 0.562);
-}
-
-/*Centralizando div*/
-.container-links{
-    display: block;
+    gap: 10px;
+    z-index: 1;
+    margin-right: auto;
     margin-left: auto;
-    margin-right: auto
 }
 
-/*Centralizando links com imagens*/
-.link{
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0.5);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -100px;
+    right: 20px;
+    font-size: 3cm;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 500;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-links{
+    position: relative;
+    display: block;
+    padding: 10px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
