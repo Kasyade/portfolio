@@ -71,7 +71,7 @@ img {
 .container-flex > div{
     border: 1px solid black;
     border-radius: 25px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     padding: 75px;
     background-color: rgba(149, 161, 201, 0.562);
