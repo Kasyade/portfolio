@@ -32,6 +32,9 @@ a {
 img {
     max-width: 100%;
     display: flex;
+}
+
+.animcao{
     animation: flutuacao 5s ease-in-out infinite;
 }
 @keyframes flutuacao{
