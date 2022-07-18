@@ -1,0 +1,87 @@
+/*Configs basicas da página*/
+html {
+    font-size: 40px;
+    font-family: inherit;
+}
+body {
+    background-color: rgba(120, 151, 190, 0.788);
+}
+h1, h2 {
+    color: rgb(0, 0, 0);
+    width: 800px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto
+}
+span {
+    color: rgb(28, 141, 13);
+}
+p {
+    color: rgb(0, 0, 0);
+    width: 900px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto
+
+}
+a {
+    padding: 5px;
+}
+img {
+    max-width: 100%;
+    display: flex;
+    animation: flutuacao 5s ease-in-out infinite;
+}
+@keyframes flutuacao{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+
+/*Centralizando imagem*/
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*criando flex-box*/
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 10px;
+}
+
+/*Editando flex-box*/
+.container-flex > div{
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+    padding: 75px;
+    background-color: antiquewhite;
+}
+
+/*centralizando div*/
+.container-links{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*Centralizando links com imagens*/
+.link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
