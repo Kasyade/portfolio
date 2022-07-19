@@ -11,6 +11,7 @@ body, ul{
     display: block;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 body{
     background-color: #1c2928;
@@ -20,7 +21,7 @@ a{
     text-decoration: none;
 }
 
-.nav-li, #logo{
+.nav-li{
 
     color: lime;
     border: 1px solid lime;
@@ -32,7 +33,7 @@ a:hover{
     background: rgba(13, 173, 34, 0.295);
 }
 
-.logo{
+#logo{
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -200,7 +201,7 @@ h1{
 .container .card{
     position: relative;
     width: 280px;
-    height: 280px;
+    height: 400px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0.5);
     border-radius: 25px;
@@ -267,8 +268,8 @@ h1{
 .links{
     display: grid;
     border: 1px solid black;
+    border-radius: 25px;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    border-radius: 25px;
+    padding: 3px;
 }
