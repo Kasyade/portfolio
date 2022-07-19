@@ -5,11 +5,48 @@
     padding: 5px;
 }
 
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: lime;
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a, .github{
+    display: block;
+    padding: 10px;
+    border: 1px solid lime;
+    border-radius: 25px;
+
+}
+
 body{
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #162322;
+    background-color: #1c2928;
     min-height: 100vh;
 }
 
@@ -22,6 +59,7 @@ img {
 
 .displayed{
     animation: flutuacao 2.5s ease-in-out infinite;
+    margin-left: auto;
 }
 @keyframes flutuacao{
     0%, 100%{
@@ -30,34 +68,41 @@ img {
     50%{
         transform: translateY(20px);
     }
-    75%{
-        transform: translateY(-20ø);
-    }
 }
 
 span{
     color: rgb(28, 141, 13);
 }
 
-a {
-    padding: 10px;
-    text-decoration: none;
-}
-
 h1{
     color: antiquewhite;
-    position: flex;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid
+}
+
+.titulo-2{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    flex-wrap: wrap;
 }
 
 .gerais{
-    position: flex;
     color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -106,15 +151,15 @@ h1{
 
 .container .card .content h2{
     position: absolute;
-    top: -100px;
-    right: 20px;
+    top: -140px;
+    right: 0;
     font-size: 3cm;
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
 }
 
 .container .card .content h3{
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: white;
     z-index: 1;
 }
@@ -139,9 +184,14 @@ h1{
 }
 
 .container-links{
-    position: relative;
-    display: block;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
 }
