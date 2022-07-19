@@ -15,6 +15,18 @@ body, ul, li, p{
 a{
     text-decoration: none;
     color: lime;
+    border: 1px solid lime;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+a:hover{
+    background: rgba(13, 173, 34, 0.295);
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .header{
@@ -26,9 +38,24 @@ a{
     flex-wrap: wrap;
 }
 
+.btn-mobile{
+    display: none;
+}
+
+@media(max-width: 600px){
+    .btn-mobile{
+        display: block;
+    }
+}
+
 .menu{
+    display: none;
+    gap: .5rem;
+}
+#menu{
     display: flex;
 }
+
 
 .menu li{
     margin-left: 10px;
