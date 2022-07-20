@@ -51,10 +51,47 @@ a:hover{
     display: flex;
 }
 
+span{
+    color: rgb(28, 141, 13);
+}
+
+h1{
+    color: antiquewhite;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid
+}
+
+.titulo-2{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    flex-wrap: wrap;
+}
+
+.gerais{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Não mostra o botão na tela do pc*/
 #btn-mobile{
     display: none;
 }
 
+/*animação do botao + criação do botão hamburguer*/
 @media(max-width: 600px){
     #btn-mobile{
         display: block;
@@ -116,7 +153,7 @@ a:hover{
     }
 }
 
-
+/*Configs básicas do menu*/
 #menu li{
     margin-left: 10px;
 }
@@ -128,6 +165,8 @@ a:hover{
     border-radius: 25px;
 
 }
+
+/*Animação da imagem no centro*/
 img {
     max-width: 100%;
     display: flex;
@@ -148,42 +187,7 @@ img {
     }
 }
 
-span{
-    color: rgb(28, 141, 13);
-}
-
-h1{
-    color: antiquewhite;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.grid{
-    display: grid
-}
-
-.titulo-2{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: antiquewhite;
-    flex-wrap: wrap;
-}
-
-.gerais{
-    color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
+/*Estilização dos cards*/
 .container{
     position: relative;
     display: flex;
@@ -237,7 +241,7 @@ h1{
 }
 
 .container .card .content h3{
-    font-size: 1.5em;
+    font-size:  1em;
     color: white;
     z-index: 1;
 }
@@ -261,6 +265,7 @@ h1{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+/*Links do final da página*/
 .container-links{
     display: flex;
     justify-content: center;
