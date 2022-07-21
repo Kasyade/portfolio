@@ -38,7 +38,7 @@ li{
 }
 
 a{
-    color: lime;
+    color: rgb(0, 255, 0, 0.55);
     font-size: 25px;
 }
 
@@ -54,9 +54,9 @@ a{
 #cabecalho-menu-item{
     display: flex;
     font-family: inherit;
-    color: lime;
+    color: rgb(0, 255, 0, 0.55);
     font-size: 15px;
-    border: 1px solid lime;
+    border: 1px solid rgb(0, 255, 0, 0.55);
     border-radius: 25px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,19 +93,19 @@ a{
 #conteudo-principal-escrito-titulo{
     font-weight: 400;
     font-size: 50px;
-    color: antiquewhite;
+    color: rgba(0, 255, 0, 0.55);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: 400;
     font-size: 25px;
-    color: antiquewhite;
+    color: rgb(82, 176, 82);
 }
 
 #conteudo-principal-escrito-paragrafo{
     font-weight: 300;
     font-size: 20px;
-    color: antiquewhite;
+    color: rgb(82, 176, 82);
 }
 
 /*Animação da arte*/
