@@ -2,7 +2,7 @@ const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event){
     if (event.type === 'touchstart') event.preventDefault();
-        const nav = document.getElementById('nav');
+        const nav = document.getElementById('cabecalho-menu');
         nav.classList.toggle('active');
         event.currentTarget.setAttribute('aria-expanded', 'true');
 }

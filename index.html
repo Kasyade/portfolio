@@ -4,115 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta >
+    <title>Meu Portfólio - Seja bem-vindo!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icones/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header id="header">
-        <a id="logo" href="/"><img src="imagens/icon-50.png" alt=""></a>
-        <nav id="nav">
-            <button id="btn-mobile" aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu">
-                <li><a id="nav-li" href="http://github.com/Kasyade" target="_blank">Github</a></li>
-                <li><a id="nav-li" href="https://www.linkedin.com/in/antonio-silva999" target="_blank">LinkedIn</a></li>
-                <li><a id="nav-li" href="https://instagram.com/alwaystoxic" target="_blank">Instagram</a></li>
-                <li><a id="nav-li" href="mailto:antonioarcanjoff@gmail.com" target="_blank">Gmail</a></li></ul>
+    <header id="cabecalho">
+        <img id="cabecalho-img" src="assets/icones/icon.png" alt="Arte ícone" title="Ícone com uma das artes que eu fiz">
+        <nav id="cabecalho-menu">
+        <button id="btn-mobile" aria-expanded="false">
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu">
+            <li id="cabecalho-menu-item"><a href="mailto:antonioarcanjoff@gmail.com">Gmail</a></li>
+            <li id="cabecalho-menu-item"><a href="https://github.com/Kasyade">GitHub</a></li>
+            <li id="cabecalho-menu-item"><a href="https://www.linkedin.com/in/antonio-silva999/">LinkedIn</a></li>
+            <li id="cabecalho-menu-item"><a href="https://instagram.com/alwaystoxic">Instagram</a><li></ul>
         </nav>
-    </header>    <div>
-    <!--Início do código (Apresentação)-->
-    <h1><span>Olá visitante!!</span> Seja bem-vindo ao meu portifólio:</h1>
-    <div class="grid-container">
-        <div class="grid">
-            <h2 class="titulo-2">Eu me chamo Antonio Arcanjo, tenho 19 anos atualmente, e estou estudando HTML, CSS e JavaScript. <br>
-                Comecei meus estudos aos 17, porém dei uma pausa muito grande, e só estou voltando agora em 2022. 
-                <br>
-                Sou como a água, consigo me adaptar em vários tipos de situações, e sempre mantendo a calma.</h2></div>
-            <div class="grid">
-                <div class="animacao">
-                    <img src="imagens/icon300.png" alt="ArtWork" title="Artwork feita por mim mesmo" class="displayed">
-                </div></div>
-    </div>
-    <div>
-        <p class="gerais">
-            Abaixo você pode conferir um pouco dos meus projetos.
-        </p>
-    </div>
-</div>
-<!--Cards Animados (Jogar tudo pra baixo da artwork)-->
-<div class="container">
-    <div class="card">
-        <div class="content">
-            <h2>01</h2>
-            <h3>Artes digitais</h3>
-            <p>Aqui temos algumas das artes que eu ja fiz. <br>Hoje em dia não trabalho mais com produção de artes digitais.</p>
-            <a href="#">Ver Artes</a>
+    </header>
+    <main id="conteudo">
+        <section id="conteudo-principal">
+            <!--Apresentação ao visitante-->
+            <div id="conteudo-principal-escrito">
+                <h1 id="conteudo-principal-escrito-titulo">"Hello World!" Seja bem-vindo.</h1>
+                <h2 id="conteudo-principal-escrito-subtitulo">Pronto para me conhecer um pouco melhor?</h2>
+                <p id="conteudo-principal-escrito-paragrafo">Eu me chamo Antonio Arcanjo, tenho 19 anos atualmente, e estou estudando HTML, CSS e JavaScript. <br>
+                Comecei meus estudos aos 17, porém dei uma pausa muito grande, e só estou voltando agora em 2022. <br>
+                Sou como a água, consigo me adaptar em vários tipos de situações, e sempre mantendo a calma.</p>
+            </div>
+            <img id="conteudo-principal-imagem" src="assets/icones/icon300.png" alt="Ilustração" title="Ilustração que fiz há alguns anos">
+        </section>
+        <section id="conteudo-secundario">
+        <!--Cards Animados (Jogar tudo pra baixo da artwork)-->
+        <div class="container">
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>01</h2>
+                    <h3>Artes digitais</h3>
+                    <p>Aqui temos algumas das artes que eu ja fiz. <br>Hoje em dia já não trabalho mais com artes digitais.</p>
+                    <a href="#">Ver Artes</a>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>02</h2>
+                    <h3>Produção Musical</h3>
+                    <p>Todas as produções que fiz até o momento. <br>Apesar de ser uma paixão, não produzo tanto.</p>
+                    <a href="https://youtube.com/kasyadeoff" target="_blank">Ver produções</a>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>03</h2>
+                    <h3>Projeto Três</h3>
+                    <p>Em breve.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>04</h2>
+                    <h3>Projeto Quatro</h3>
+                    <p>Em breve.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>05</h2>
+                    <h3>Projeto Cinco</h3>
+                    <p>Em breve.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="container-card-content">
+                    <h2>06</h2>
+                    <h3>Projeto Seis</h3>
+                    <p>Em breve.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>02</h2>
-            <h3>Produção Musical</h3>
-            <p>Todas as produções que fiz até o momento. <br>Às vezes ainda produzo algumas músicas, mas não como antes.</p>
-            <a href="https://youtube.com/kasyadeoff" target="_blank">Ver produções</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>03</h2>
-            <h3>Projeto Três</h3>
-            <p>Em breve.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>04</h2>
-            <h3>Projeto Quatro</h3>
-            <p>Em breve.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>05</h2>
-            <h3>Projeto Cinco</h3>
-            <p>Em breve.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>06</h2>
-            <h3>Projeto Seis</h3>
-            <p>Em breve.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-    </div>
-</div>
-<div>
-    <div>
-        <!--Div do container de links de contato com imagem-->
-        <p class="gerais">
-            Como entrar em contato:
-        </p>
-        <div class="container-links">
-            <a href = "mailto:antonioarcanjoff@gmail.com"><img src="imagens/icones/gmail-80.png" target="_blank" class="link"></a>
-            <a href="https://instagram.com/alwaystoxic" target="_blank"><img src="imagens/icones/instagram-80.png" target="_blank" class="link"></a>
-            <a href="https://www.linkedin.com/in/antonio-silva999" target="_blank"><img src="imagens/icones/linkedin-80.png" target="_blank" class="link"></a>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <h4 id="rodape-texto">Obrigado pela visita. Espero que tenha gostado dos projetos que viu, e espero que volte mais vezes para ver os projetos que virão.</h4>
+    </footer>
     <script src="script.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".card")),{
+        VanillaTilt.init(document.querySelectorAll(".container-card")),{
             max: 25,
             speed: 400,
             glare: true
         }
     </script>
     <script src="btn.js"></script>
-    <script src="fade.js"></script>
 </body>
 </html>
