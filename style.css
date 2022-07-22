@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
 /*Reset da página*/
 *{
     margin: 0px;
@@ -27,8 +30,9 @@ body{
 
 #menu{
     display: flex;
-    padding: 10px;
-    gap: 15px;
+    padding: 1px;
+    gap: 10px;
+    align-items: center;
 }
 
 
@@ -53,7 +57,6 @@ a{
 
 #cabecalho-menu-item{
     display: flex;
-    font-family: inherit;
     color: rgb(0, 255, 0, 0.55);
     font-size: 15px;
     border: 1px solid rgb(0, 255, 0, 0.55);
@@ -62,6 +65,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Share Tech', sans-serif;
 }
 
 #cabecalho-menu-item:hover{
@@ -79,26 +83,27 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 40px;
+    padding: 30px;
 }
 
 #conteudo-principal-escrito{
     display: flex;
     gap: 30px;
     flex-direction: column;
-    font-family: inherit;
-    margin-left: 250px;
+    flex-wrap: wrap;
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 200px;
 }
 
 #conteudo-principal-escrito-titulo{
-    font-weight: 400;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 40px;
     color: rgba(0, 255, 0, 0.55);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(82, 176, 82);
 }
 
@@ -110,7 +115,7 @@ a{
 
 /*Animação da arte*/
 #conteudo-principal-imagem{
-    height: 400px;
+    height: 300px;
     max-width: 100%;
     display: flex;
     margin-left: auto;
@@ -124,6 +129,45 @@ a{
     }
     50%{
         transform: translateY(20px);
+    }
+}
+
+/*Animação do conteúdo principal*/
+#conteudo-principal-escrito-titulo{
+    border-right: 2px solid rgba(0, 255, 0, 0.35);
+    animation: blink 900ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 87%;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right-color: rgba(0, 255, 0, 0.35);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+#conteudo-principal-escrito-subtitulo, #conteudo-principal-escrito-paragrafo{
+    animation: fade 15s normal;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
