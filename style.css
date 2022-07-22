@@ -176,7 +176,7 @@ a{
     display: none;
 }
 
-@media(max-width: 800px){
+@media(max-width: 600px){
     #btn-mobile{
         display: block;
         border: 1px solid black;
