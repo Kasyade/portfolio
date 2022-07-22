@@ -92,44 +92,25 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Share Tech Mono', monospace;
-    margin-left: 200px;
+    margin-left: 10px;
 }
 
 #conteudo-principal-escrito-titulo{
-    font-weight: 600;
-    font-size: 0.53cm;
+    font-weight: bold;
+    font-size: 0.6cm;
     color: rgba(0, 255, 0, 0.55);
 }
 
 #conteudo-principal-escrito-subtitulo{
-    font-weight: 400;
-    font-size: 0.5cm;
-    color: rgb(82, 176, 82);
+    font-weight: bold;
+    font-size: 0.55cm;
+    color: rgba(61, 141, 61, 0.839);
 }
 
 #conteudo-principal-escrito-paragrafo{
-    font-weight: 300;
-    font-size: 0.4cm;
-    color: rgb(82, 176, 82);
-}
-
-/*Animação da arte*/
-#conteudo-principal-imagem{
-    height: 200px;
-    max-width: 100%;
-    display: flex;
-    margin-left: auto;
-    margin-right: 200px;
-    animation: flutuacao 2.5s ease-in-out infinite;
-}
-
-@keyframes flutuacao{
-    0%, 100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(20px);
-    }
+    font-weight: bold;
+    font-size: 0.5cm;
+    color: rgba(80, 148, 80, 0.689);
 }
 
 /*Animação do conteúdo principal*/
