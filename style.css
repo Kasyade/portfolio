@@ -76,6 +76,7 @@ a{
 #conteudo{
     border-top: 0.4px solid rgba(15, 12, 7, 0.5);
     margin-bottom: 48px;
+    padding: 75px;
 }
 
 #conteudo-principal{
@@ -98,19 +99,30 @@ a{
 #conteudo-principal-escrito-titulo{
     font-weight: bold;
     font-size: 0.6cm;
-    color: rgba(0, 255, 0, 0.55);
+    color: rgba(0, 255, 0, 0.806);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: bold;
     font-size: 0.55cm;
-    color: rgba(61, 141, 61, 0.839);
+    color: rgb(57, 248, 57);
 }
 
 #conteudo-principal-escrito-paragrafo{
     font-weight: bold;
     font-size: 0.5cm;
-    color: rgba(80, 148, 80, 0.689);
+    color: rgb(57, 248, 57);
+}
+
+#conteudo-imagem{
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 200px;
+    opacity: 20%;
+    animation: flutuacao 3s ease-in-out infinite;
 }
 
 /*Animação do conteúdo principal*/
@@ -119,6 +131,10 @@ a{
     animation: blink 900ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
     white-space: nowrap;
     overflow: hidden;
+}
+
+span{
+    color: rgb(213, 233, 209);
 }
 
 @keyframes typing{
@@ -149,6 +165,17 @@ a{
     }
     to{
         opacity: 1;
+    }
+}
+
+/*Animação imagem*/
+
+@keyframes flutuacao{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
     }
 }
 
@@ -221,6 +248,10 @@ a{
     #cabecalho-menu.active #hamburger::before{
         transform: rotate(135deg);
     }
+}
+
+#conteudo-secundario{
+    margin-top: 80px;
 }
 
 /*Estilização dos cards*/
