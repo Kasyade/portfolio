@@ -99,26 +99,26 @@ a{
 }
 
 #conteudo-principal-escrito-titulo{
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--font-xl);
     color: rgba(178, 102, 232, 0.806);
 }
 
 #conteudo-principal-escrito-subtitulo{
-    font-weight: bold;
+    font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
 }
 
 #conteudo-principal-escrito-paragrafo{
-    font-weight: bold;
+    font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
 }
 
 :root{
-    --font-xl: clamp(0, 2.5vh + 0.1rem, 5rem);
-    --font-md: clamp(0, 1.5vh + 0.1rem, 3rem);
+    --font-xl: clamp(2vh, 2.5vh + 0.1rem, 5rem);
+    --font-md: clamp(0.3vh, 1.5vh + 0.1rem, 3rem);
 }
 
 #conteudo-imagem{
