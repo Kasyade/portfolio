@@ -25,7 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background:rgba(26, 31, 25, 0.459);
+    background:rgba(15, 12, 7, 0.818);
 }
 
 #menu{
@@ -76,7 +76,7 @@ a{
 #conteudo{
     border-top: 0.4px solid rgba(15, 12, 7, 0.5);
     margin-bottom: 48px;
-    padding: 75px;
+    padding: 65px;
 }
 
 #conteudo-principal{
@@ -89,7 +89,7 @@ a{
 
 #conteudo-principal-escrito{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Share Tech Mono', monospace;
@@ -98,27 +98,25 @@ a{
 
 #conteudo-principal-escrito-titulo{
     font-weight: bold;
-    font-size: 0.6cm;
+    font-size: 24px;
     color: rgba(0, 255, 0, 0.806);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: bold;
-    font-size: 0.55cm;
+    font-size: 22px;
     color: rgb(57, 248, 57);
 }
 
 #conteudo-principal-escrito-paragrafo{
     font-weight: bold;
-    font-size: 0.5cm;
+    font-size: 18px;
     color: rgb(57, 248, 57);
 }
 
 #conteudo-imagem{
     position: absolute;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;
     width: 200px;
     opacity: 20%;
@@ -156,7 +154,7 @@ span{
 }
 
 #conteudo-principal-escrito-subtitulo, #conteudo-principal-escrito-paragrafo{
-    animation: fade 15s normal;
+    animation: fade 10s normal;
 }
 
 @keyframes fade{
@@ -201,7 +199,7 @@ span{
         width: 100%;
         top: 110px;
         right: 0px;
-        background:rgba(26, 31, 25, 0.459);
+        background:rgba(15, 12, 7, 0.818);
         transition: 1.5s;
         z-index: 1000;
         height:0px;
@@ -251,7 +249,7 @@ span{
 }
 
 #conteudo-secundario{
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 /*Estilização dos cards*/
@@ -263,7 +261,7 @@ span{
     max-width: 1200px;
     flex-wrap: wrap;
     padding: 75px;
-    gap: 10px;
+    gap: 20px;
     z-index: 1;
     margin-right: auto;
     margin-left: auto;
@@ -273,7 +271,7 @@ span{
     position: relative;
     width: 280px;
     height: 400px;
-    margin: 30px;
+    margin: 10px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0.5);
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
