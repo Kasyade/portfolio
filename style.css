@@ -269,7 +269,7 @@ span{
 
 .container .container-card{
     position: relative;
-    width: 280px;
+    width: 300px;
     height: 400px;
     margin: 10px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0.5);
@@ -343,5 +343,5 @@ span{
     font-family: 'Share Tech', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: rgb(119, 0, 255);
+    color: rgb(191, 155, 233);
 }
