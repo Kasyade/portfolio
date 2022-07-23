@@ -12,7 +12,7 @@ const checkSizes = () => {
     const h2FontSize = h2Styles.getPropertyValue('font-size');
     const pFontSize = pStyles.getPropertyValue('font-size');
 
-    result.innerText = `O tamanho de fonte do H1 é ${h1FontSize}, o H2 é ${h2FontSize} e o p é ${pFontSize}`;
+//    result.innerText = `O tamanho de fonte do H1 é ${h1FontSize}, o H2 é ${h2FontSize} e o p é ${pFontSize}`;
 }
 
 setInterval(checkSizes, 500);
