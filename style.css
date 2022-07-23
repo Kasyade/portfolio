@@ -13,7 +13,7 @@
 body{
     font-size: 100%;
     background: rgb(12,14,14);
-    background: linear-gradient(45deg, rgba(12,14,14,1) 0%, rgba(25,96,90,1) 50%, rgba(28,41,40,1) 100%);
+    background: linear-gradient(45deg, rgba(12,14,14,1) 0%, rgb(66, 25, 96) 50%, rgb(33, 28, 41) 100%);
 }
 
 /*Configurações de menu e cabeçalho*/
@@ -42,7 +42,7 @@ li{
 }
 
 a{
-    color: rgb(0, 255, 0, 0.55);
+    color: rgba(128, 0, 255, 0.872);
     font-size: 25px;
 }
 
@@ -57,9 +57,9 @@ a{
 
 #cabecalho-menu-item{
     display: flex;
-    color: rgb(0, 255, 0, 0.55);
+    color: rgb(128, 0, 255, 0.55);
     font-size: 15px;
-    border: 1px solid rgb(0, 255, 0, 0.55);
+    border: 1px solid rgba(140, 0, 255, 0.846);
     border-radius: 25px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@ a{
 }
 
 #cabecalho-menu-item:hover{
-    background: rgba(28, 37, 37, 0.678);
+    background: rgba(34, 28, 37, 0.678);
 }
 
 /*Conteúdos das sections*/
@@ -99,19 +99,19 @@ a{
 #conteudo-principal-escrito-titulo{
     font-weight: bold;
     font-size: 24px;
-    color: rgba(0, 255, 0, 0.806);
+    color: rgba(178, 102, 232, 0.806);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: bold;
     font-size: 22px;
-    color: rgb(57, 248, 57);
+    color: rgb(158, 106, 196);
 }
 
 #conteudo-principal-escrito-paragrafo{
     font-weight: bold;
     font-size: 18px;
-    color: rgb(57, 248, 57);
+    color: rgb(158, 106, 196);
 }
 
 #conteudo-imagem{
@@ -125,7 +125,7 @@ a{
 
 /*Animação do conteúdo principal*/
 #conteudo-principal-escrito-titulo{
-    border-right: 2px solid rgba(0, 255, 0, 0.35);
+    border-right: 2px solid rgba(140, 0, 255, 0.35);
     animation: blink 900ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
     white-space: nowrap;
     overflow: hidden;
@@ -146,7 +146,7 @@ span{
 
 @keyframes blink{
     from{
-        border-right-color: rgba(0, 255, 0, 0.35);
+        border-right-color: rgba(179, 0, 255, 0.35);
     }
     to{
         border-right-color: transparent;
@@ -191,7 +191,7 @@ span{
     }
 
     #btn-mobile:hover{
-        background: rgba(76, 116, 68, 0.459);
+        background: rgba(116, 68, 110, 0.459);
     }
     #menu{
         display: grid;
@@ -222,7 +222,7 @@ span{
         gap: .5rem;
     }
     #hamburger{
-        border-top: 2px solid lime;
+        border-top: 2px solid rgb(119, 0, 255);
         width: 20px;
         display: block;
     }
@@ -231,7 +231,7 @@ span{
         display: block;
         width: 20px;
         height: 2px;
-        background-color: lime;
+        background-color: rgb(119, 0, 255);
         margin-top: 5px;
         transition: .3s;
         position: relative;
@@ -301,19 +301,19 @@ span{
     top: -100px;
     right: 0;
     font-size: 3cm;
-    color: rgba(33, 231, 49, 0.15);
+    color: rgba(148, 90, 214, 0.15);
     pointer-events: none;
 }
 
 .container .container-card .container-card-content h3{
     font-size:  0.7cm;
-    color: rgb(33, 231, 49);
+    color: rgb(175, 136, 231);
     z-index: 1;
 }
 
 .container .container-card .container-card-content p{
     font-size: 0.5cm;
-    color: rgb(33, 231, 49);
+    color: rgb(175, 136, 231);
     font-weight: 300;
 }
 
@@ -322,8 +322,8 @@ span{
     display: inline-block;
     padding: 8px 20px;
     margin-top: 15px;
-    background: rgba(20, 106, 26, 0.501);
-    color: rgb(0, 255, 26);
+    background: rgba(70, 20, 106, 0.501);
+    color: rgb(163, 121, 222);
     text-decoration: none;
     border-radius: 15px;
     font-weight: 500;
@@ -340,8 +340,8 @@ span{
 
 #rodape-texto{
     padding: 40px;
-    font-family: inherit;
+    font-family: 'Share Tech', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: lime;
+    color: rgb(119, 0, 255);
 }
