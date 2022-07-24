@@ -222,7 +222,6 @@ img{
         height: calc(100vh - 110px);
         visibility: visible;
         overflow-y: auto;
-        padding: 25px;
     }
     #btn-mobile{
         display: flex;
