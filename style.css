@@ -44,8 +44,8 @@ li{
 }
 
 a{
-    color: rgba(128, 0, 255, 0.872);
-    font-size: 25px;
+    color: rgba(181, 128, 224, 0.846);
+    font-size: 20px;
 }
 
 #cabecalho-img{
@@ -59,9 +59,8 @@ a{
 
 #cabecalho-menu-item{
     display: flex;
-    color: rgb(128, 0, 255, 0.55);
-    font-size: 15px;
-    border: 1px solid rgba(140, 0, 255, 0.846);
+    color: rgba(155, 116, 194, 0.55);
+    border: 1px solid rgba(181, 128, 224, 0.846);
     border-radius: 25px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,7 +70,7 @@ a{
 }
 
 #cabecalho-menu-item:hover{
-    background: rgba(34, 28, 37, 0.678);
+    background: rgba(111, 85, 125, 0.678);
 }
 
 /*Conteúdos das sections*/
@@ -207,14 +206,14 @@ img{
         background: rgba(116, 68, 110, 0.459);
     }
     #menu{
-        display: grid;
+        display: block;
         position: absolute;
         width: 100%;
         top: 110px;
         right: 0px;
         background:rgba(15, 12, 7, 0.818);
         transition: 1.5s;
-        z-index: 1000;
+        z-index: 1;
         height:0px;
         visibility: hidden;
         overflow-y: hidden;
@@ -223,7 +222,7 @@ img{
         height: calc(100vh - 110px);
         visibility: visible;
         overflow-y: auto;
-        padding: 5px;
+        padding: 25px;
     }
     #btn-mobile{
         display: flex;
@@ -235,7 +234,7 @@ img{
         gap: .5rem;
     }
     #hamburger{
-        border-top: 2px solid rgb(119, 0, 255);
+        border-top: 2px solid rgb(167, 108, 235);
         width: 20px;
         display: block;
     }
@@ -244,7 +243,7 @@ img{
         display: block;
         width: 20px;
         height: 2px;
-        background-color: rgb(119, 0, 255);
+        background-color: rgb(167, 108, 235);
         margin-top: 5px;
         transition: .3s;
         position: relative;
