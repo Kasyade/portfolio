@@ -273,7 +273,6 @@ img{
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
-    padding: 75px;
     gap: 20px;
     z-index: 1;
     margin-right: auto;
@@ -312,14 +311,14 @@ img{
 .container .container-card .container-card-content h2{
     position: absolute;
     top: -100px;
-    right: 0;
+    right: 0px;
     font-size: 3cm;
     color: rgba(148, 90, 214, 0.15);
     pointer-events: none;
 }
 
 .container .container-card .container-card-content h3{
-    font-size:  0.7cm;
+    font-size:  0.8cm;
     color: rgb(175, 136, 231);
     z-index: 1;
 }
