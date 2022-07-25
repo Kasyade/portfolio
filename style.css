@@ -37,7 +37,6 @@ body{
     align-items: center;
 }
 
-
 li{
     list-style: none;
     padding: 10px;
@@ -106,6 +105,8 @@ a{
     flex-wrap: wrap;
     font-family: 'Share Tech Mono', monospace;
     margin-left: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #conteudo-principal-escrito-titulo{
@@ -124,6 +125,8 @@ a{
     font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
+    animation: fade 10s normal;
+    text-align: center;
 }
 
 :root{
@@ -131,25 +134,14 @@ a{
     --font-md: clamp(0.3vh, 1.8vh + 0.1rem, 3rem);
 }
 
-img{
-    width: 320px;
-}
-#conteudo-imagem{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    opacity: 20%;
-    animation: flutuacao 3s ease-in-out infinite;
+#conteudo-secundario{
+    margin-top: 100px;
 }
 
 /*Animação do conteúdo principal*/
 #conteudo-principal-escrito-titulo{
     border-right: 2px solid rgba(140, 0, 255, 0.35);
-    animation: blink 900ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    animation: fade 10s normal;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -158,25 +150,7 @@ img{
     color: rgb(213, 233, 209);
 }
 
-@keyframes typing{
-    from{
-        width: 0%;
-    }
-    to{
-        width: 100%;
-    }
-}
-
-@keyframes blink{
-    from{
-        border-right-color: rgba(179, 0, 255, 0.35);
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-
-#conteudo-principal-escrito-subtitulo, #conteudo-principal-escrito-paragrafo{
+#conteudo-principal-escrito-subtitulo{
     animation: fade 10s normal;
 }
 
@@ -189,15 +163,29 @@ img{
     }
 }
 
-/*Animação imagem*/
+/*Animação do parágrafo "sobre mim"*/
 
-@keyframes flutuacao{
-    0%, 100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(30px);
-    }
+#btn-paragrafo{
+    background: none;
+    color: rgb(214, 183, 236);
+    width: 240px;
+    height: 50px;
+    border-left: 1px solid rgba(181, 128, 224, 0.846);
+    border-top: 1px solid rgba(181, 128, 224, 0.846);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: var(--font-md);
+    font-weight: 400;
+    display: block;
+}
+
+#btn-paragrafo:hover{
+    background: rgba(70, 56, 77, 0.678);
+}
+
+#conteudo-principal-escrito-paragrafo{
+    display: none;
 }
 
 /*Configs do botão no celular*/
@@ -220,17 +208,17 @@ img{
         display: block;
         position: absolute;
         width: 100%;
-        top: 110px;
+        top: 90px;
         right: 0px;
         background:rgba(15, 12, 7, 0.818);
         transition: 1.5s;
         z-index: 1;
-        height:0px;
+        height: 0px;
         visibility: hidden;
         overflow-y: hidden;
     }
     #cabecalho-menu.active #menu{
-        height: calc(100vh - 110px);
+        height: calc(100vh - 90px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -268,10 +256,6 @@ img{
     #cabecalho-menu.active #hamburger::before{
         transform: rotate(135deg);
     }
-}
-
-#conteudo-secundario{
-    margin-top: 100px;
 }
 
 /*Estilização dos cards*/

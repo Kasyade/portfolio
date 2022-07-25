@@ -9,3 +9,12 @@ function toggleMenu(event){
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+const btnParagrafo = document.getElementById('btn-paragrafo')
+
+function mostra(id){
+    document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block';
+}
+
+btnParagrafo.addEventListener('click', mostra);
+btnParagrafo.addEventListener('touchstart', mostra);
