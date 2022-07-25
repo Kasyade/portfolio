@@ -48,8 +48,19 @@ a{
     font-size: 20px;
 }
 
-#cabecalho-img{
-    width: 70px;
+#cabecalho-a{
+    color: rgba(181, 128, 224, 0.846);
+    border: 1px solid rgba(181, 128, 224, 0.846);
+    border-radius: 25px;
+    display: block;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#cabecalho-a:hover{
+    background: rgba(111, 85, 125, 0.678);
 }
 
 #cabecalho-menu{
