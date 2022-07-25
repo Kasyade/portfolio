@@ -13,9 +13,12 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 const btnParagrafo = document.getElementById('btn-paragrafo')
 
 function mostra(id){
-    if(document.getElementById('conteudo-principal-escrito-paragrafo').style.display == 'block'){
-    document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'none'}
+    if (id.type === 'touchstart') id.preventDefault();
+    if(document.getElementById('conteudo-principal-escrito-paragrafo').style.display == 'block'){document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'none'
+    document.getElementById('btn-paragrafo').value="Sim, estou pronto!";
+}
     else(document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block');
+    document.getElementById('btn-paragrafo').value="Agora sim! :)";
 };
 
 btnParagrafo.addEventListener('click', mostra);
