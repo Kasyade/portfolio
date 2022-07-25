@@ -13,8 +13,10 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 const btnParagrafo = document.getElementById('btn-paragrafo')
 
 function mostra(id){
-    document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block';
-}
+    if(document.getElementById('conteudo-principal-escrito-paragrafo').style.display == 'block'){
+    document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'none'}
+    else(document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block');
+};
 
 btnParagrafo.addEventListener('click', mostra);
 btnParagrafo.addEventListener('touchstart', mostra);

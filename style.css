@@ -87,7 +87,7 @@ a{
 #conteudo{
     border-top: 0.4px solid rgba(15, 12, 7, 0.5);
     margin-bottom: 48px;
-    padding: 65px;
+    padding: 200px;
 }
 
 #conteudo-principal{
@@ -125,8 +125,9 @@ a{
     font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
-    animation: fade 10s normal;
+    animation: fade-in 5s normal both;
     text-align: center;
+    display: none;
 }
 
 :root{
@@ -134,14 +135,20 @@ a{
     --font-md: clamp(0.3vh, 1.8vh + 0.1rem, 3rem);
 }
 
+hr{
+    margin-top: auto;
+    color: rgba(15, 12, 7, 0.5);
+}
+
 #conteudo-secundario{
-    margin-top: 100px;
+    margin-top:350px;
+    padding: 200px;
 }
 
 /*Animação do conteúdo principal*/
 #conteudo-principal-escrito-titulo{
     border-right: 2px solid rgba(140, 0, 255, 0.35);
-    animation: fade 10s normal;
+    animation: fade-in 10s normal;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -151,15 +158,24 @@ a{
 }
 
 #conteudo-principal-escrito-subtitulo{
-    animation: fade 10s normal;
+    animation: fade-in 10s normal;
 }
 
-@keyframes fade{
+@keyframes fade-in{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
 
@@ -185,7 +201,7 @@ a{
 }
 
 #conteudo-principal-escrito-paragrafo{
-    display: none;
+    opacity: 0;
 }
 
 /*Configs do botão no celular*/
