@@ -26,7 +26,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background:rgba(15, 12, 7, 0.818);
+    background:rgba(31, 17, 36, 0.818);
 }
 
 #menu{
@@ -65,7 +65,7 @@ a{
 
 #cabecalho-menu{
     display: flex;
-    padding: 10px;
+    padding: 19px;
 }
 
 #cabecalho-menu-item{
@@ -127,7 +127,8 @@ a{
     font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
-    animation: blink 900ms infinite normal, typing 4s steps(30) 4s normal both;
+    animation: blink 900ms infinite normal, typing 10s steps(60) 4s normal both;
+    max-width: max-content;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid rgba(181, 128, 224, 0.846);
@@ -149,7 +150,7 @@ a{
 
 
 #conteudo-secundario{
-    margin-top: 240px;
+    margin-top: 150px;
     padding: 20px;
 }
 
@@ -162,7 +163,7 @@ a{
     animation: fade-in 20s normal both;
     justify-content: center;
     align-items: center;
-    padding-bottom: 125px;
+    padding-bottom: 280px;
 }
 
 /*Animação do conteúdo principal*/
@@ -260,9 +261,9 @@ a{
         display: block;
         position: absolute;
         width: 100%;
-        top: 94.9px;
+        top: 110px;
         right: 0px;
-        background:rgba(15, 12, 7, 0.818);
+        background:rgba(31, 17, 36, 0.818);
         transition: 1.5s;
         z-index: 1;
         height: 0px;
@@ -270,7 +271,7 @@ a{
         overflow-y: hidden;
     }
     #cabecalho-menu.active #menu{
-        height: calc(100vh - 94.5px);
+        height: calc(100vh - 110px);
         visibility: visible;
         overflow-y: auto;
     }
