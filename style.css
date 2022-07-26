@@ -48,17 +48,19 @@ a{
 
 #cabecalho-a{
     color: rgba(181, 128, 224, 0.846);
-    border: 1px solid rgba(181, 128, 224, 0.846);
+    border-bottom: 0.5px solid rgba(181, 128, 224, 0.846);
+    border-right: 0.5px solid rgba(181, 128, 224, 0.846);
     border-radius: 25px;
     display: block;
     font-family: 'Share Tech', sans-serif;
     font-size: 18px;
     padding: 15px;
     font-weight: 600;
+    
 }
 
 #cabecalho-a:hover{
-    background: rgba(111, 85, 125, 0.678);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(46, 6, 74) 50%, rgb(67, 16, 148) 100%);
 }
 
 #cabecalho-menu{
@@ -78,7 +80,7 @@ a{
 }
 
 #cabecalho-menu-item:hover{
-    background: rgba(111, 85, 125, 0.678);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(118, 38, 175) 50%, rgb(133, 73, 230) 100%);
 }
 
 /*Conteúdos das sections*/
@@ -207,7 +209,7 @@ a{
 }
 
 #btn-paragrafo:hover{
-    background: rgba(70, 56, 77, 0.678);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(46, 6, 74) 50%, rgb(67, 16, 148) 100%);
 }
 
 #conteudo-principal-escrito-paragrafo{
@@ -228,7 +230,7 @@ a{
     }
 
     #btn-mobile:hover{
-        background: rgba(116, 68, 110, 0.459);
+        background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(46, 6, 74) 50%, rgb(67, 16, 148) 100%);
     }
     #menu{
         display: block;
