@@ -33,13 +33,13 @@ body{
 #menu{
     display: flex;
     padding: 1px;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
 li{
     list-style: none;
-    padding: 10px;
+    padding: 15px;
 }
 
 a{
@@ -53,7 +53,7 @@ a{
     border-radius: 25px;
     display: block;
     font-family: 'Share Tech', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px;
     font-weight: 600;
 }
@@ -70,7 +70,6 @@ a{
 #cabecalho-menu-item{
     display: flex;
     color: rgba(155, 116, 194, 0.55);
-    border: 1px solid rgba(181, 128, 224, 0.846);
     border-radius: 25px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,7 +235,7 @@ a{
         display: block;
         position: absolute;
         width: 100%;
-        top: 90px;
+        top: 94.9px;
         right: 0px;
         background:rgba(15, 12, 7, 0.818);
         transition: 1.5s;
@@ -246,7 +245,7 @@ a{
         overflow-y: hidden;
     }
     #cabecalho-menu.active #menu{
-        height: calc(100vh - 90px);
+        height: calc(100vh - 94.5px);
         visibility: visible;
         overflow-y: auto;
     }
