@@ -118,12 +118,19 @@ a{
     font-weight: 600;
     font-size: var(--font-xl);
     color: rgba(178, 102, 232, 0.806);
+    position: relative;
+    max-width: max-content;
+    border-right: 2px solid rgba(181, 128, 224, 0.846);
 }
 
 #conteudo-principal-escrito-subtitulo{
     font-weight: 400;
     font-size: var(--font-md);
     color: rgb(158, 106, 196);
+    animation: blink 900ms infinite normal, typing 4s steps(30) 4s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(181, 128, 224, 0.846);
 }
 
 #conteudo-principal-escrito-paragrafo{
@@ -136,8 +143,8 @@ a{
 }
 
 :root{
-    --font-xl: clamp(2.1vh, 2.3vh + 0.1rem, 5rem);
-    --font-md: clamp(0.3vh, 2vh + 0.1rem, 3rem);
+    --font-xl: clamp(2.1vh, 2.2vh + 0.1rem, 5rem);
+    --font-md: clamp(0.3vh, 1.8vh + 0.1rem, 3rem);
 }
 
 
@@ -159,18 +166,35 @@ a{
 }
 
 /*Animação do conteúdo principal*/
+
 #conteudo-principal-escrito-titulo{
-    animation: fade-in 10s normal;
+    animation: blink 900ms infinite normal, typing 4s steps(30) 0.55s normal both;
     white-space: nowrap;
     overflow: hidden;
 }
 
-#result, span{
-    color: rgb(213, 233, 209);
+
+
+@keyframes blink{
+    from{
+        border-right-color: rgba(181, 128, 224, 0.846);
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
 
-#conteudo-principal-escrito-subtitulo{
-    animation: fade-in 10s normal;
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+#result, span{
+    color: rgb(213, 233, 209);
 }
 
 @keyframes fade-in{
