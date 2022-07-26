@@ -17,8 +17,8 @@ function mostra(id){
     if(document.getElementById('conteudo-principal-escrito-paragrafo').style.display == 'block'){document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'none'
     document.getElementById('btn-paragrafo').value="Sim, estou pronto!";
 }
-    else(document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block');
-    document.getElementById('btn-paragrafo').value="Agora sim! :)";
+    else{(document.getElementById('conteudo-principal-escrito-paragrafo').style.display = 'block');
+    document.getElementById('btn-paragrafo').value="Agora sim! :)"};
 };
 
 btnParagrafo.addEventListener('click', mostra);
