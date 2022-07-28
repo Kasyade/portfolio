@@ -361,18 +361,21 @@ a{
     font-size: 3cm;
     color: rgba(148, 90, 214, 0.15);
     pointer-events: none;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .container .container-card .container-card-content h3{
     font-size:  0.8cm;
     color: rgb(175, 136, 231);
     z-index: 1;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .container .container-card .container-card-content p{
     font-size: 0.5cm;
     color: rgb(175, 136, 231);
     font-weight: 300;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .container .container-card .container-card-content a{
@@ -386,6 +389,7 @@ a{
     border-radius: 15px;
     font-weight: 500;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Share Tech Mono', monospace;
 }
 
 /*Links do final da página*/
