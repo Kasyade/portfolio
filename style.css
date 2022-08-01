@@ -356,7 +356,7 @@ a{
 
 .container .container-card .container-card-content h2{
     position: absolute;
-    top: -100px;
+    top: -50px;
     right: 0px;
     font-size: 3cm;
     color: rgba(148, 90, 214, 0.15);

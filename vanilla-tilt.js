@@ -451,7 +451,7 @@ var VanillaTilt = (function () {
           speed: 300,
           transition: true,
           axis: null,
-          glare: true,
+          glare: false,
           "max-glare": 1,
           "glare-prerender": false,
           "full-page-listening": false,
