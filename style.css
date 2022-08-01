@@ -407,3 +407,23 @@ a{
     font-size: 20px;
     color: rgb(191, 155, 233);
 }
+
+/*Barra de Rolagem*/
+/*Fundo que corre*/
+::-webkit-scrollbar-track{
+    background-color: rgb(119, 26, 213);
+}
+
+/*Fundo que corre*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(132, 36, 201);
+}
+
+/*Linha que desce*/
+
+::-webkit-scrollbar-thumb{
+    background: rgb(171, 151, 206);
+    border-radius: 25px;
+}
