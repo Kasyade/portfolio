@@ -359,21 +359,21 @@ a{
     top: -50px;
     right: 0px;
     font-size: 3cm;
-    color: rgba(148, 90, 214, 0.15);
+    color: rgba(125, 120, 120, 0.15);
     pointer-events: none;
     font-family: 'Share Tech Mono', monospace;
 }
 
 .container .container-card .container-card-content h3{
     font-size:  0.8cm;
-    color: rgb(175, 136, 231);
+    color: rgb(194, 194, 194);
     z-index: 1;
     font-family: 'Share Tech Mono', monospace;
 }
 
 .container .container-card .container-card-content p{
     font-size: 0.5cm;
-    color: rgb(175, 136, 231);
+    color: rgb(158, 158, 158);
     font-weight: 300;
     font-family: 'Share Tech Mono', monospace;
 }
@@ -383,8 +383,8 @@ a{
     display: inline-block;
     padding: 8px 20px;
     margin-top: 15px;
-    background: rgba(70, 20, 106, 0.501);
-    color: rgb(163, 121, 222);
+    background: rgba(0, 0, 0, 0.50);
+    color: rgb(247, 247, 247);
     text-decoration: none;
     border-radius: 15px;
     font-weight: 500;
