@@ -14,7 +14,7 @@ body{
     width: 100%;
     min-height: 100vh;
     font-size: 100%;
-    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(46, 6, 74) 50%, rgb(67, 16, 148) 100%);
+    background: linear-gradient(0deg, rgba(46,6,74,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 /*Configurações de menu e cabeçalho*/
@@ -26,7 +26,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background:rgba(31, 17, 36, 0.818);
+    background:rgba(0, 0, 0, 0.818);
 }
 
 #menu{
@@ -42,12 +42,12 @@ li{
 }
 
 a{
-    color: rgba(159, 75, 227, 0.846);
+    color: rgba(255, 255, 255, 0.712);
     font-size: 20px;
 }
 
 #cabecalho-a{
-    color: rgba(159, 75, 227, 0.846);
+    color: rgba(255, 255, 255, 0.712);
     border-bottom: 0.5px solid rgba(181, 128, 224, 0.846);
     border-right: 0.5px solid rgba(181, 128, 224, 0.846);
     border-radius: 25px;
@@ -70,7 +70,7 @@ a{
 
 #cabecalho-menu-item{
     display: flex;
-    color: rgba(155, 116, 194, 0.55);
+    color: rgba(255, 255, 255, 0.712);
     border-radius: 25px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,7 +117,7 @@ a{
 #conteudo-principal-escrito-titulo{
     font-weight: 600;
     font-size: var(--font-xl);
-    color: rgba(178, 102, 232, 0.806);
+    color: rgba(255, 255, 255, 0.712);
     position: relative;
     max-width: max-content;
     border-right: 2px solid rgba(181, 128, 224, 0.846);
@@ -126,7 +126,7 @@ a{
 #conteudo-principal-escrito-subtitulo{
     font-weight: 400;
     font-size: var(--font-md);
-    color: rgb(158, 106, 196);
+    color: rgba(255, 255, 255, 0.712);
     animation: blink 900ms infinite normal, typing 10s steps(60) 4s normal both;
     max-width: max-content;
     white-space: nowrap;
@@ -137,7 +137,7 @@ a{
 #conteudo-principal-escrito-paragrafo{
     font-weight: 400;
     font-size: var(--font-md);
-    color: rgb(158, 106, 196);
+    color: rgba(255, 255, 255, 0.712);
     animation: fade-in 5s normal both;
     text-align: center;
     display: none;
@@ -159,7 +159,7 @@ a{
     font-weight: 400;
     font-size: 22px;
     text-align: center;
-    color: rgb(158, 106, 196);
+    color: rgba(255, 255, 255, 0.712);
     animation: fade-in 20s normal both;
     justify-content: center;
     align-items: center;
@@ -178,7 +178,7 @@ a{
 
 @keyframes blink{
     from{
-        border-right-color: rgba(181, 128, 224, 0.846);
+        border-right-color: rgba(255, 255, 255, 0.712);
     }
     to{
         border-right-color: transparent;
@@ -195,7 +195,7 @@ a{
 }
 
 #result, span{
-    color: rgb(213, 233, 209);
+    color: rgb(110, 100, 255);
 }
 
 @keyframes fade-in{
@@ -220,7 +220,7 @@ a{
 
 #btn-paragrafo{
     background: none;
-    color: rgb(214, 183, 236);
+    color: rgba(255, 255, 255, 0.712);
     width: 240px;
     height: 50px;
     border-left: 1px solid rgba(181, 128, 224, 0.846);
@@ -285,7 +285,7 @@ a{
         gap: .5rem;
     }
     #hamburger{
-        border-top: 2px solid rgb(167, 108, 235);
+        border-top: 2px solid rgba(255, 255, 255, 0.712);
         width: 20px;
         display: block;
     }
@@ -294,7 +294,7 @@ a{
         display: block;
         width: 20px;
         height: 2px;
-        background-color: rgb(167, 108, 235);
+        background-color: rgba(255, 255, 255, 0.712);
         margin-top: 5px;
         transition: .3s;
         position: relative;
@@ -405,7 +405,7 @@ a{
     font-family: 'Share Tech', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: rgb(191, 155, 233);
+    color: rgba(255, 255, 255, 0.712);
 }
 
 /*Barra de Rolagem*/
