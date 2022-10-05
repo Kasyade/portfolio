@@ -38,7 +38,6 @@ body{
 
 li{
     list-style: none;
-    padding: 15px;
 }
 
 a{
@@ -79,6 +78,10 @@ a{
     justify-content: center;
     align-items: center;
     font-family: 'Share Tech', sans-serif;
+}
+
+#cabecalho-menu-item a{
+    padding: 15px;
 }
 
 #cabecalho-menu-item:hover{
