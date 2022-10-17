@@ -143,8 +143,8 @@ a{
     font-weight: 400;
     font-size: var(--font-md);
     color: rgba(255, 255, 255, 0.712);
-    animation: fade-in 5s normal both;
-    text-align: center;
+    animation: fade-in 10s normal both;
+    text-align: justify;
     display: none;
 }
 
