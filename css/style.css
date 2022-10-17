@@ -67,7 +67,7 @@ a{
     padding: 19px;
 }
 
-#cabecalho-menu-item{
+.cabecalho-menu-item{
     display: flex;
     color: rgba(255, 255, 255, 0.712);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.846);
@@ -80,11 +80,11 @@ a{
     font-family: 'Share Tech', sans-serif;
 }
 
-#cabecalho-menu-item a{
+.cabecalho-menu-item a{
     padding: 15px;
 }
 
-#cabecalho-menu-item:hover{
+.cabecalho-menu-item:hover{
     background: rgb(54, 49, 61);
 }
 
